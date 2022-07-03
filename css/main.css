@@ -32,6 +32,12 @@ ol {
   padding-left: 0;
 }
 
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--secondary-background-color);
@@ -321,10 +327,6 @@ body {
 .example-link__thumb {
   position: relative;
   overflow: hidden;
-}
-
-.example-link__photo {
-  display: block;
 }
 
 .example-link__thumb-text {
