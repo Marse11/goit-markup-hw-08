@@ -4,9 +4,20 @@
 
 .benefits-list {
   display: flex;
-  align-items: center;
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+  // align-items: center;
+}
+
+.benefits-list__item {
+  width: 100%;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -27,12 +38,17 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  text-align: center;
   margin-bottom: 10px;
+
+  @include tablet {
+    text-align: start;
+  }
 }
 
 .benefits-list__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  max-width: 270px;
+  max-width: 450px;
 }
