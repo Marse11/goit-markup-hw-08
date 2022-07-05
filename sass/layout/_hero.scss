@@ -24,6 +24,8 @@
       url(../images/hero-desktop/hero_1200_1x.jpg);
     height: 600px;
     max-width: 1600px;
+    display: block;
+    margin: 0 auto;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero-desktop/hero_1200_2x.jpg);
