@@ -614,6 +614,15 @@ body {
   max-width: 450px;
 }
 
+.services {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+  }
+}
+
 .services__title,
 .team__title,
 .clients__title {
@@ -628,14 +637,12 @@ body {
 
 .services-list {
   display: flex;
-}
-.services-list__item:not(:last-child) {
-  margin-right: 30px;
+  gap: 30px;
 }
 
 .services-list__item {
   position: relative;
-  display: flex;
+  width: calc((100% - 60px) / 3);
 }
 
 .services-list__text {

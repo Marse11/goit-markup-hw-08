@@ -1,3 +1,10 @@
+.services {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
 .services__title,
 .team__title,
 .clients__title {
@@ -12,14 +19,12 @@
 
 .services-list {
   display: flex;
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  gap: 30px;
 }
 
 .services-list__item {
   position: relative;
-  display: flex;
+  width: calc((100% - 60px) / 3);
 }
 
 .services-list__text {
