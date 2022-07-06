@@ -1,11 +1,16 @@
 .projects__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.projects__item:not(:last-child) {
-  margin-right: 8px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
+  @include tablet {
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .projects-button {

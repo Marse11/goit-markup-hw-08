@@ -763,12 +763,21 @@ body {
 
 .projects__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
 }
-
-.projects__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .projects__list {
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__list {
+    margin-bottom: 50px;
+  }
 }
 
 .projects-button {
