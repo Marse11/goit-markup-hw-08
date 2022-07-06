@@ -629,12 +629,21 @@ body {
 .team__title,
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .services__title,
+.team__title,
+.clients__title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .services-list {
@@ -673,6 +682,26 @@ body {
 .team-list {
   background-color: var(--secondary-accent-background-color);
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-list__item {
+  width: 100%;
+  background-color: var(--secondary-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid var(--primary-background-color);
+}
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team-list__photo-subtitle {
@@ -692,16 +721,6 @@ body {
 
 .team-list__text {
   color: var(--primary-text-color);
-}
-
-.team-list__item {
-  background-color: var(--secondary-background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  border: 1px solid var(--primary-background-color);
-}
-.team-list__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients-list {

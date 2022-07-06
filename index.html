@@ -171,17 +171,40 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                class="team-list__photo"
-                src="./images/img4.jpg"
-                alt="мужчина в рубашке и очках"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop/team1_1200_1x.jpg 1x,
+                    ./images/team-desktop/team1_1200_2x.jpg 2x
+                  "
+                  media="(min-width: 1200)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/team1_768_1x.jpg 1x,
+                    ./images/team-tablet/team1_768_2x.jpg 2x
+                  "
+                  media="(min-width: 768)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile/team1_480_1x.jpg 1x,
+                    ./images/team-mobile/team1_480_2x.jpg 2x
+                  "
+                  media="(min-width: 320)"
+                />
+                <img
+                  class="team-list__photo"
+                  src="./images/team-mobile/team1_480_1x.jpg"
+                  alt="мужчина в рубашке и очках"
+                  width="450"
+                />
+              </picture>
               <div class="team-list__photo-subtitle">
                 <h3 class="team-list__team-subtitle">Игорь Демьяненко</h3>
                 <p class="team-list__text" lang="en">Product Designer</p>
@@ -218,12 +241,36 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__photo"
-                src="./images/img5.jpg"
-                alt="женщина в пиджаке и очках"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop/team2_1200_1x.jpg 1x,
+                    ./images/team-desktop/team2_1200_2x.jpg 2x
+                  "
+                  media="(min-width: 1200)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/team2_768_1x.jpg 1x,
+                    ./images/team-tablet/team2_768_2x.jpg 2x
+                  "
+                  media="(min-width: 768)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile/team2_480_1x.jpg 1x,
+                    ./images/team-mobile/team2_480_2x.jpg 2x
+                  "
+                  media="(min-width: 320)"
+                />
+                <img
+                  class="team-list__photo"
+                  src="./images/team-mobile/team2_480_1x.jpg"
+                  alt="женщина в пиджаке и очках"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-list__photo-subtitle">
                 <h3 class="team-list__team-subtitle">Ольга Репина</h3>
                 <p class="team-list__text" lang="en">Frontend Developer</p>
@@ -260,12 +307,36 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__photo"
-                src="./images/img6.jpg"
-                alt="мужчина в рубашке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop/team3_1200_1x.jpg 1x,
+                    ./images/team-desktop/team3_1200_2x.jpg 2x
+                  "
+                  media="(min-width: 1200)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/team3_768_1x.jpg 1x,
+                    ./images/team-tablet/team3_768_2x.jpg 2x
+                  "
+                  media="(min-width: 768)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile/team3_480_1x.jpg 1x,
+                    ./images/team-mobile/team3_480_2x.jpg 2x
+                  "
+                  media="(min-width: 320)"
+                />
+                <img
+                  class="team-list__photo"
+                  src="./images/team-mobile/team3_480_1x.jpg"
+                  alt="мужчина в рубашке"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-list__photo-subtitle">
                 <h3 class="team-list__team-subtitle">Николай Тарасов</h3>
                 <p class="team-list__text" lang="en">Marketing</p>
@@ -302,11 +373,29 @@
               </div>
             </li>
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop/team4_1200_1x.jpg 1x,
+                    ./images/team-desktop/team4_1200_2x.jpg 2x
+                  "
+                  media="(min-width: 1200)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/team4_768_1x.jpg 1x,
+                    ./images/team-tablet/team4_768_2x.jpg 2x
+                  "
+                  media="(min-width: 768)"
+                />
+                <source srcset="srcset="./images/team-mobile/team4_480_1x.jpg 1x,
+                ./images/team-mobile/team4_480_2x.jpg 2x " media="(min-width: 320)" />
+              </picture>
               <img
                 class="team-list__photo"
-                src="./images/img7.jpg"
+                src="./images/team-mobile/team4_480_1x.jpg"
                 alt="мужчина в футболке и очках"
-                width="270"
+                width="450"
               />
               <div class="team-list__photo-subtitle">
                 <h3 class="team-list__team-subtitle">Михаил Ермаков</h3>
@@ -345,7 +434,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Постоянные клиеты</h2>
