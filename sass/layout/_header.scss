@@ -118,3 +118,14 @@
   margin-right: 10px;
   fill: currentColor;
 }
+
+.button-mobile-menu-open {
+  display: block;
+  margin-left: auto;
+  border: 0;
+  background-color: inherit;
+  padding: 0;
+  @include tablet {
+    display: none;
+  }
+}
