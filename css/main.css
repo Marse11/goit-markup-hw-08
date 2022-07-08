@@ -118,10 +118,16 @@ body {
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .social-list {
@@ -437,13 +443,35 @@ body {
 }
 
 .header__logo {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 
 .logo__text-header {
   color: var(--title-text-color);
+}
+
+.nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
 }
 
 .header-list {
@@ -484,15 +512,35 @@ body {
 }
 
 .contacts {
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contacts-list {
   display: flex;
-  align-items: center;
 }
-.contacts-list__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contacts-list {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    align-items: center;
+  }
+  .contacts-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts-list__link {
@@ -501,12 +549,16 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 0;
   color: var(--primary-text-color);
   transition: var(--transition);
 }
 .contacts-list__link:hover, .contacts-list__link:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__link {
+    padding: 32px 0;
+  }
 }
 
 .contacts-list__icon {
