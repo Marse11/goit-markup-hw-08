@@ -120,8 +120,11 @@
 }
 
 .button-mobile-menu-open {
-  display: block;
-  margin-left: auto;
+  // display: block;
+  // margin-left: auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   border: 0;
   background-color: inherit;
   padding: 0;
