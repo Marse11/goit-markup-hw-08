@@ -572,11 +572,21 @@ body {
   border: 0;
   background-color: inherit;
   padding: 0;
+  color: #000000;
+  transition: var(--transition-color);
+}
+.button-mobile-menu-open:hover, .button-mobile-menu-open:focus {
+  color: var(--accent-color);
+  outline: none;
 }
 @media screen and (min-width: 768px) {
   .button-mobile-menu-open {
     display: none;
   }
+}
+
+.icon-mobile-menu-open {
+  fill: currentColor;
 }
 
 .hero {

@@ -125,7 +125,18 @@
   border: 0;
   background-color: inherit;
   padding: 0;
+  color: #000000;
+  transition: var(--transition-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: none;
+  }
   @include tablet {
     display: none;
   }
+}
+
+.icon-mobile-menu-open {
+  fill: currentColor;
 }
