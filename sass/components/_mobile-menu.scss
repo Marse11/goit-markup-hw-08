@@ -16,6 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  overflow-y: auto;
 }
 
 .button-mobile-menu-close {
@@ -39,6 +40,7 @@
 }
 
 .mobile-menu-top__list {
+  margin-bottom: 42px;
   .current {
     color: var(--accent-color);
   }
